@@ -19,17 +19,19 @@
   <body>
     <header>
       <!-- top navbar -->
-      <section class="mx-auto w-4/5">
-        <nav class="mulish sm:flex items-center">
+      <section class="mx-auto w-4/5 mt-8 sm:mt-0">
+        <nav class="mulish sm:flex items-end">
           <div class="grow">
             <h1
-              class="text-[#12132D] font-black text-4xl text-center md:text-left"
+              class="text-[#12132D] font-black text-4xl text-center md:text-left mb-5 sm:mb-0"
             >
               ReTro
             </h1>
           </div>
-          <div class="flex gap-7 flex-col sm:flex-row items-center">
-            <ul class="menu menu-horizontal rounded-box mt-6">
+          <div
+            class="flex gap-7 flex-col sm:flex-row items-center sm:items-end"
+          >
+            <ul class="menu menu-horizontal rounded-box sm:mt-6">
               <li>
                 <a class="tooltip" data-tip="Home">
                   <svg
@@ -121,10 +123,97 @@
         </nav>
       </section>
     </header>
+
+    <main class="mx-auto w-4/5 mt-8 sm:mt-14">
+      <!-- hero area -->
+      <section class="">
+        <div
+          class="px-5 py-16 sm:py-0 gap-14 sm:px-24 min-h-[80vh] flex flex-col sm:flex-row bg-[linear-gradient(rgba(18,19,45,1),rgba(18,19,45,1)),url('./assets/images/bgbanner.png')] items-center rounded-2xl mulish"
+        >
+          <div class="sm:w-[60%] space-y-4 sm:space-y-7">
+            <h1
+              class="text-white font-black text-center sm:text-left text-4xl sm:text-6xl"
+            >
+              Welcome to the
+              <span
+                class="bg-gradient-to-r from-[#797DFC] to-[#797DFC00] inline-block text-transparent bg-clip-text"
+                >ReTro</span
+              >
+              Forum
+            </h1>
+            <p
+              class="sm:w-[90%] text-[#FFFFFFCC] font-medium text-base text-center sm:text-left"
+            >
+              Online spaces dedicated to broader retro forum culture, which
+              could include discussions on vintage fashion, music, movies, and
+              lifestyle from past decades.
+            </p>
+            <!-- search box -->
+            <div
+              class="bg-white flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-7 rounded-2xl py-5 sm:py-0 sm:rounded-full sm:w-[80%]"
+            >
+              <label
+                class="input border border-base-300 sm:border-0 sm:px-0 flex items-center gap-2"
+              >
+                <input
+                  type="text"
+                  class="grow focus:outline-0"
+                  placeholder="Search"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="w-4 h-4 opacity-70"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </label>
+              <button
+                class="btn btn-primary bg-[#797DFC] hover:bg-[#797DFC] border-none font-bold text-white py-3 px-6 rounded-full h-auto min-h-0"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+          <div class="sm:w-[40%]">
+            <div class="bg-white p-7 rounded-xl space-y-3">
+              <div
+                class="flex justify-between font-medium text-base sm:text-xl"
+              >
+                <li class="list-none">Registered Users</li>
+                <li class="list-none">01</li>
+              </div>
+              <div
+                class="flex justify-between font-medium text-base sm:text-xl"
+              >
+                <li class="list-none">Forum</li>
+                <li class="list-none">05</li>
+              </div>
+              <div
+                class="flex justify-between font-medium text-base sm:text-xl"
+              >
+                <li class="list-none">Topics</li>
+                <li class="list-none">01</li>
+              </div>
+              <div
+                class="flex justify-between font-medium text-base sm:text-xl"
+              >
+                <li class="list-none">Replies</li>
+                <li class="list-none">01</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <!-- javaScript code link -->
     <script src="./assets/js/utility.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
-
-<!-- <section class="mx-auto w-4/5"></section> -->
