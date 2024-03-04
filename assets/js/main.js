@@ -32,7 +32,6 @@ const getPostData = async (
 
   // loop for all post
   allPost.forEach((value) => {
-    console.log(value.title.replaceAll("'", "&apos;"));
     const div = document.createElement("div");
     div.classList = `flex gap-5 flex-col sm:flex-row items-center sm:items-start bg-[#797DFC1A] p-5 sm:p-10 pb-5 rounded-2xl`;
     div.innerHTML = `<!-- img -->
