@@ -58,7 +58,7 @@ const getPostData = async (
                         # ${value?.category ?? "Nothing"}
                       </h6>
                       <h6 class="text-[#12132DCC] text-sm font-medium">
-                        Designation: ${value?.author?.name ?? "Unknown"}
+                        Author: ${value?.author?.name ?? "Unknown"}
                       </h6>
                     </div>
                     <!-- post title and description -->
